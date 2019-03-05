@@ -40,6 +40,7 @@
   },
   "homepage": "https://github.com/strong-roots-capital/is-record-context",
   "dependencies": {
+    "@sindresorhus/is": "^0.15.0",
     "@strong-roots-capital/record-context": "^1.0.0",
     "@types/node": "^10.12.18",
     "typescript": "^3.2.2"
