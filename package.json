@@ -1,6 +1,6 @@
 {
   "name": "@strong-roots-capital/is-record-context",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Test to determine if an object implements RecordContext",
   "main": "dist/is-record-context.js",
   "types": "dist/is-record-context.d.ts",
