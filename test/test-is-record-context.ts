@@ -70,3 +70,30 @@ test('should function as a type-guard', t => {
         t.fail()
     }
 })
+
+test('should not recognize objects with timeframe of improper type', t => {
+    const context = {
+        timeframe: '1440',
+        exchange: 'TESTEXCHANGE',
+        tradepair: 'TESTTRADEPAIR'
+    }
+    t.false(isRecordContext(context))
+})
+
+test('should not recognize objects with tradepair of improper type', t => {
+    const context = {
+        timeframe: '1440',
+        exchange: 'TESTEXCHANGE',
+        tradepair: 1234
+    }
+    t.false(isRecordContext(context))
+})
+
+test('should not recognize objects with exchange of improper type', t => {
+    const context = {
+        timeframe: '1440',
+        exchange: 1234,
+        tradepair: 'TESTTRADEPAIR'
+    }
+    t.false(isRecordContext(context))
+})
