@@ -97,3 +97,30 @@ test('should not recognize objects with exchange of improper type', t => {
     }
     t.false(isRecordContext(context))
 })
+
+test('should not recognize objects with null exchange', t => {
+    const context = {
+        timeframe: 'timeframe',
+        exchange: null,
+        tradepair: 'TESTTRADEPAIR'
+    }
+    t.false(isRecordContext(context))
+})
+
+test('should not recognize objects with null tradepair', t => {
+    const context = {
+        timeframe: 'timeframe',
+        exchange: 1234,
+        tradepair: null
+    }
+    t.false(isRecordContext(context))
+})
+
+test('should not recognize objects with null timeframe', t => {
+    const context = {
+        timeframe: null,
+        exchange: 1234,
+        tradepair: 'TESTTRADEPAIR'
+    }
+    t.false(isRecordContext(context))
+})
