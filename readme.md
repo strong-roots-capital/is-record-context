@@ -17,7 +17,7 @@ const object = fetchMysteryObject()
 if (isRecordContext(object)) {
     console.log(object.tradepair) // ok
 } else {
-    console.log(object.tradepair) // error!
+    console.log(object.tradepair) // potential error!
 }
 ```
 
