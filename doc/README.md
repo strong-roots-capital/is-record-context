@@ -46,7 +46,7 @@ Related
 
 ▸ **isRecordContext**(object: *`any`*): `boolean`
 
-*Defined in [is-record-context.ts:12](https://github.com/strong-roots-capital/is-record-context/blob/bedc670/src/is-record-context.ts#L12)*
+*Defined in [is-record-context.ts:12](https://github.com/strong-roots-capital/is-record-context/blob/dd62805/src/is-record-context.ts#L12)*
 
 Type-guard for `RecordContext`.
 
