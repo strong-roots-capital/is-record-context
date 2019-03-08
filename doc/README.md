@@ -21,7 +21,7 @@ const object = fetchMysteryObject()
 if (isRecordContext(object)) {
     console.log(object.tradepair) // ok
 } else {
-    console.log(object.tradepair) // error!
+    console.log(object.tradepair) // potential error!
 }
 ```
 
@@ -46,7 +46,7 @@ Related
 
 ▸ **isRecordContext**(object: *`any`*): `boolean`
 
-*Defined in [is-record-context.ts:12](https://github.com/strong-roots-capital/is-record-context/blob/1f27456/src/is-record-context.ts#L12)*
+*Defined in [is-record-context.ts:12](https://github.com/strong-roots-capital/is-record-context/blob/b56bbd6/src/is-record-context.ts#L12)*
 
 Type-guard for `RecordContext`.
 
