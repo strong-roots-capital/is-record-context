@@ -8,6 +8,14 @@ import RecordContext from '@strong-roots-capital/record-context'
 
 import isRecordContext from '../src/is-record-context'
 
+test('should not recognize null objects', t => {
+    t.false(isRecordContext(null))
+})
+
+test('should not recognize undefined objects', t => {
+    t.false(isRecordContext(undefined))
+})
+
 test('should recognize RecordContexts', t => {
     const context: RecordContext = {
         timeframe: 1440,
